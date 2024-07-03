@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle Form</title>
+  </head>
+  <body>
+    <script>
+      const side1 = parseFloat(window.prompt("Enter the length of side 1:"));
+      const side2 = parseFloat(window.prompt("Enter the length of side 2:"));
+      const side3 = parseFloat(window.prompt("Enter the length of side 3:"));
+
+      if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1)
+        window.alert("A triangle can be formed!");
+      else window.alert("A triangle cannot be formed!");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events in JS</title>
+  </head>
+  <body>
+    Enter Your Name:
+    <input
+      type="text"
+      id="one"
+      onblur="onBlurFunction()"
+      onfocus="onFocusFunction()"
+      oninput="onInputFunction()"
+    />
+    <br /><br />
+    Search:
+    <input type="search" id="inputOfSearch" onsearch="onSearchFunction()" />
+    <p id="searchText"></p>
+
+    <script>
+      let name = document.getElementById("one");
+      function onBlurFunction() {
+        name.style.backgroundColor = "white";
+        name.style.color = "black";
+      }
+
+      function onFocusFunction() {
+        name.style.backgroundColor = "black";
+        name.style.color = "white";
+      }
+
+      function onInputFunction() {
+        name.style.backgroundColor = "Brown";
+      }
+
+      function onSearchFunction() {
+        inputOfSearch = document.getElementById("inputOfSearch").value;
+        document.getElementById("searchText").innerHTML = `Searching: ${inputOfSearch}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Img</title>
+    <style>
+      img {
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="off.png" alt="bulb" id="img" /> <br />
+
+    <script>
+      let img = document.getElementById("img");
+
+      img.addEventListener("mouseover", function () {
+        img.src = "on.png";
+      });
+      img.addEventListener("mouseleave", function () {
+        img.src = "off.png";
+      });
+    </script>
+  </body>
+</html>

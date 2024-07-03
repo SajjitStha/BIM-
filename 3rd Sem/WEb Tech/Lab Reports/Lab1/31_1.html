@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Events</title>
+  </head>
+  <body>
+    <h3 id="click">Click</h3>
+    <img id="doubleClick" src="off.png" height="100px" /> <br />
+    <button id="links">Link to Nowhere</button>
+    <h1 id="hovering">Hover</h1>
+    <script>
+      let clicks = document.getElementById("click");
+      let doubleClick = document.getElementById("doubleClick");
+      let links = document.getElementById("links");
+      let hovering = document.getElementById("hovering");
+
+      clicks.addEventListener("click", function () {
+        clicks.innerHTML = "Clicked!!";
+      });
+
+      doubleClick.addEventListener("dblclick", function () {
+        doubleClick.src = "on.png";
+      });
+
+      links.addEventListener("mouseup", function () {
+        links.style.color = "red";
+      });
+      links.addEventListener("mousedown", function () {
+        links.style.color = "green";
+      });
+
+      hovering.addEventListener("mouseover", function () {
+        hovering.style.textDecoration = "underline";
+      });
+      hovering.addEventListener("mouseout", function () {
+        hovering.style.textDecoration = "none";
+      });
+    </script>
+  </body>
+</html>

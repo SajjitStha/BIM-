@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password</title>
+  </head>
+  <body>
+    <label for="password">Password:</label> <br />
+    <input type="password" name="password" id="pass1" /> <br />
+    <br />
+
+    <label for="rePassword">Re-enter Password:</label> <br />
+    <input type="password" name="rePassword" id="pass2" /> <br />
+    <br />
+    <button onclick="passCheck()">Submit</button>
+    <script>
+      function passCheck() {
+        let password = document.getElementById("pass1").value;
+        let rePassword = document.getElementById("pass2").value;
+
+        if (password === rePassword) window.alert("Success!!");
+        else window.alert("Password doesn't Match!");
+      }
+    </script>
+  </body>
+</html>

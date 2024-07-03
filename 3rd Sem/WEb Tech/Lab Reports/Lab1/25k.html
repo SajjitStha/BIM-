@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade</title>
+  </head>
+  <body>
+    <script>
+      const mark = parseFloat(window.prompt("Enter the marks"));
+
+      function grade(marks) {
+        if (marks >= 90) {
+          return "A";
+        } else if (marks >= 80) {
+          return "A-";
+        } else if (marks >= 70) {
+          return "B+";
+        } else if (marks >= 60) {
+          return "B";
+        } else if (marks >= 50) {
+          return "B-";
+        } else {
+          return "F";
+        }
+      }
+
+      window.alert("Grade: " + grade(mark));
+    </script>
+  </body>
+</html>

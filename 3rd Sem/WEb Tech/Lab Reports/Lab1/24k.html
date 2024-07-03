@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Intrest</title>
+  </head>
+  <body>
+    <script>
+      const principal = parseFloat(prompt("Enter the principal amount:"));
+      const rate = parseFloat(prompt("Enter the rate of interest:"));
+      const time = parseFloat(prompt("Enter the time period (in years):"));
+
+      document.write("Principal: " + principal + " Rate: " + rate + "% Time: " + time);
+
+      const SI = (principal * rate * time) / 100;
+
+      document.write("<br>Simple Interest = " + SI);
+    </script>
+  </body>
+</html>

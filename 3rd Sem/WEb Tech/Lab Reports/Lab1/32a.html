@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add/Remove Elements</title>
+  </head>
+  <body>
+    <div id="div1">
+      <h1>Hello World!</h1>
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit accusamus aliquid provident inventore
+        vitae aut deleniti error non, corrupti ducimus unde esse odit, ut, ea perferendis? Necessitatibus id nam
+        ducimus!
+      </p>
+    </div>
+
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <script>
+      function addElement() {
+        const para = document.createElement("p");
+        const message = document.createTextNode("This is Appended Text");
+        para.appendChild(message);
+
+        const div1 = document.getElementById("div1");
+        div1.appendChild(para);
+      }
+
+      function removeElement() {
+        const parent = document.getElementById("div1");
+        const child = document.getElementsByTagName("p");
+
+        parent.removeChild(child[1]);
+      }
+    </script>
+  </body>
+</html>

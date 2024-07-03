@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form onsubmit="return validate()">
+      UserName:
+      <input type="text" id="username" />
+
+      <br />Password
+      <input type="password" id="pass" />
+
+      <input type="submit" />
+
+      <p id="errMsg" style="color: red"></p>
+    </form>
+
+    <script>
+      function validate() {
+        const username = document.getElementById("username").value;
+        const pass = document.getElementById("pass").value;
+        const errMsg = document.getElementById("errMsg");
+        if (username === "" || pass === "") {
+          errMsg.innerHTML = "Username and Password can't be blank";
+          return false;
+        }
+        if (pass.length <= 8) {
+          errMsg.innerHTML = "Password should be more than 8 characters long";
+          return false;
+        }
+       
+        alert("Sucessful");
+        
+        return true;
+      }
+    </script>
+  </body>
+</html>

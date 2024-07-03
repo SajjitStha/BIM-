@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Keyboard Events</title>
+  </head>
+  <body>
+    <input type="text" id="text" onkeydown="myFunction()" onkeyup="anotherFunction()" onkeypress="pressing()" />
+    <p id="display">Hold..</p>
+    <p id="type"></p>
+
+    <script>
+      let displayMsg = document.getElementById("display");
+      let type = document.getElementById("type");
+
+      function myFunction() {
+        displayMsg.innerHTML = "Typing...";
+      }
+
+      function anotherFunction() {
+        displayMsg.innerHTML = "Hold..";
+      }
+
+      function pressing() {
+        let text = document.getElementById("text").value;
+        type.innerHTML = `Typed: ${text}`;
+      }
+    </script>
+  </body>
+</html>

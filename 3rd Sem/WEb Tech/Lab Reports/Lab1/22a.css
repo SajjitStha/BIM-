@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #975202;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main {
+    width: 60%;
+    height: 75vh;
+    background-color: #473114;
+    display: flex;
+    align-items: center;
+    float: left;
+    clear: left;
+  }
+  
+  .sidebar {
+    float: right;
+    height: 75vh;
+    width: 40%;
+  }
+  
+  .main p {
+    font-size: 20px;
+    text-align: justify;
+    color: #fefae0;
+    padding: 30px;
+  }
+  
+  .footer {
+    height: 10vh;
+    width: 100%;
+    background-color:  #975202;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    clear: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

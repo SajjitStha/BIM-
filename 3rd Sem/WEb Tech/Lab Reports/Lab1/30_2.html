@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb</title>
+    <style>
+      img {
+        height: 200px;
+        width: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="off.png" alt="bulb" id="img" /> <br />
+    <button onclick="turnOn()">Turn on</button>
+    <button onclick="turnOff()">Turn off</button>
+
+    <script>
+      let img = document.getElementById("img");
+      function turnOn() {
+        img.src = "on.png";
+      }
+
+      function turnOff() {
+        img.src = "off.png";
+      }
+    </script>
+  </body>
+</html>

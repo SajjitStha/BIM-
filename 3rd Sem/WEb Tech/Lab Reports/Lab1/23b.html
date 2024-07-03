@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 2.0</title>
+    <link rel="stylesheet" href="23b.css" />
+  </head>
+  <body>
+    <form>
+      <div class="col">
+        <label for="roll">Roll Number:</label>
+        <input type="number" name="roll" />
+      </div>
+
+      <div class="col">
+        <label for="student-name">Name:</label>
+        <input type="text" name="student-name" />
+      </div>
+
+      <div class="col">
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="" />
+      </div>
+
+      <div class="col">
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" />
+        Male
+        <input type="radio" name="gender" />
+        Female
+        <input type="radio" name="gender" />
+        Others
+      </div>
+
+      <div class="col">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" />
+      </div>
+
+      <div class="col">
+        <label for="faculty">Faculty:</label>
+        <select name="faculty">
+          <option value="BIM">BIM</option>
+          <option value="CSIT">CSIT</option>
+          <option value="BA">BA</option>
+          <option value="Physics">Physics</option>
+        </select>
+      </div>
+
+      <div class="col">
+        <label for="transport">Transport:</label>
+        <input type="checkbox" name="transport" />Bus
+        <input type="checkbox" name="transport" />Walking
+        <input type="checkbox" name="transport" />Private Vehicle
+      </div>
+
+      <div class="col btn">
+        <input type="submit" name="save" value="Save" />
+        <input type="reset" name="cancel" value="Cancel" />
+        <input type="reset" name="reset" />
+      </div>
+    </form>
+  </body>
+</html>

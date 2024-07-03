@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Great Small Middle</title>
+  </head>
+  <body>
+    <script>
+      const n1 = parseInt(window.prompt("Enter a number"));
+      const n2 = parseInt(window.prompt("Enter another number"));
+      const n3 = parseInt(window.prompt("Enter another number"));
+
+      const small = Math.min(n1, n2, n3);
+      const great = Math.max(n1, n2, n3);
+      const middle = n1 + n2 + n3 - small - great;
+
+      document.write("Smallest: " + small + "<br>Largest: " + great + "<br>Middle: " + middle);
+    </script>
+  </body>
+</html>

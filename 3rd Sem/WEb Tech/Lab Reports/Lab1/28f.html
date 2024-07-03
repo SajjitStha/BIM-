@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Primes</title>
+  </head>
+  <body>
+    <script>
+      let n1 = parseInt(window.prompt("Enter a number: "));
+      let n2 = parseInt(window.prompt("Enter another number: "));
+
+      if (checkPrime(n1) && checkPrime(n2)) {
+        let sum = n1 + n2;
+        document.write("Sum = " + sum);
+      } else window.alert("Input Number/s is Not Prime!!");
+
+      function checkPrime(n1) {
+        n1 = parseInt(n1);
+        if (n1 <= 1) return false;
+
+        for (let i = 2; i * i <= n1; i++) {
+          if (n1 % i === 0) return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>

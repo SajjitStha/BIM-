@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #bde0fe;
+  }
+  
+  form {
+    width: 320px;
+    background-color:orange;
+    margin: auto;
+    margin-top: 2%;
+    border:5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: table;
+    color: black;
+  }
+  
+  .col {
+    display: table-row;
+  }
+  
+  label,
+  input,
+  select {
+    display: table-cell;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  input,
+  select {
+    background-color: #fefae0;
+    padding: 8px;
+    font-weight: bold;
+  }

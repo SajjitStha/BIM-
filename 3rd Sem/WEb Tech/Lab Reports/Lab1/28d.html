@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dates</title>
+  </head>
+  <body>
+    <label for="date1">Date 1: </label>
+    <input type="date" name="date1" id="date1" /><br />
+    <label for="date2">Date 2: </label>
+    <input type="date" name="date2" id="date2" /><br />
+    <br />
+    <button onclick="dateDifference()">Calculate</button>
+    <script>
+      function dateDifference() {
+        let date1 = new Date(document.getElementById("date1").value);
+        let date2 = new Date(document.getElementById("date2").value);
+
+        let difference = Math.abs(date2 - date1);
+
+        // 1s = 1000ms
+        // 1m = 60s
+        // 1hr = 60m
+        // 1day = 24hrs
+        difference = difference / (1000 * 60 * 60 * 24);
+        console.log("Days Difference = " + difference + "day/s");
+      }
+    </script>
+  </body>
+</html>

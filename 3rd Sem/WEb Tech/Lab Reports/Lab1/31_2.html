@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On Load</title>
+  </head>
+  <body onLoad="onLoadFunction()" onunload="onUnloadFunction()" onresize="onResizeFunction()">
+    <h1>I am heading h1</h1>
+    <br /><br />
+
+    <img src="everest.jpg" onerror="displayErrorImage()" />
+    <p id="errorMsg" style="color: red"></p>
+    <script>
+      errorMsg = document.getElementById("errorMsg");
+      function onLoadFunction() {
+        alert("This page has loaded");
+      }
+
+      function onUnloadFunction() {
+        alert("Unloaded");
+      }
+
+      function onResizeFunction() {
+        document.body.style.backgroundColor = "red";
+      }
+
+      function displayErrorImage() {
+        errorMsg.innerHTML = "Sorry! The Image couldn't load";
+      }
+    </script>
+  </body>
+</html>

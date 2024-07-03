@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Middle Number</title>
+  </head>
+  <body>
+    <script>
+      const n1 = parseInt(window.prompt("Enter a number"));
+      const n2 = parseInt(window.prompt("Enter another number"));
+      const n3 = parseInt(window.prompt("Enter another number"));
+
+      function middlenum(a, b, c) {
+        if ((a >= b && a <= c) || (a <= b && a >= c)) return a;
+        else if ((b >= a && b <= c) || (b <= a && b >= c)) return b;
+        else return c;
+      }
+
+      const mid = middlenum(n1, n2, n3);
+      window.alert(mid + " is the middle number");
+    </script>
+  </body>
+</html>

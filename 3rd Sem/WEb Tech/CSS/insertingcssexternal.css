@@ -1,0 +1,35 @@
+*{                               /*Universal Selecter*/
+    background-color: black;  
+    background-image: url('https://media.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{                             /* Element Selecter*/
+    color:hsla(203, 87%, 56%, 0.507);
+   font-size:120px; 
+}
+
+#test{                         /* ID Selecter*/
+   
+   color:red;
+   font-size:80px; 
+}
+
+.baba{            /*Class selector*/
+    
+   color:green;
+   font-size:50px; 
+}
+.img{
+    width:80px;
+    height:40px;
+}
+h1,h2,h3,p{
+    background-color:darkgrey;
+    text-align:center;
+}
+div{
+    background-color:white;
+    border: 2px;
+
+}

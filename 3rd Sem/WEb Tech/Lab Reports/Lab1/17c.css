@@ -1,0 +1,25 @@
+ body {
+    background-color: red;
+  }
+  
+  #topic {
+    background-color: orange;
+    font-size: 70px;
+    border: 10px solid;
+    padding: 50px;
+    width: max-content;
+    margin: auto;
+  }
+  
+  #box {
+    background-color: orange;
+    
+    
+  }
+  
+  .para {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 50px;
+  }

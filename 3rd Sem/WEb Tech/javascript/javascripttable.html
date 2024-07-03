@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var name1 = ["ram", "sita", "hari"];
+            document.write(name1[0]+"<br>");
+            document.write(name1[1]+"<br>");
+            document.write(name1[2]+"<br>");
+
+            var name2 = [
+                ["ram", 34],
+                ["sita", 35],
+                ["hari", 36],
+
+            ]
+            document.write('<table border=1 width=30%>');
+            for(i = 0; i<name2.length; i++){
+                document.write('<tr>');
+                    document.write('<td>');
+                    document.write(name2[i][0]);
+                    document.write('</td>');
+
+                    document.write('<td>');
+                    document.write(name2[i][1]);
+                    document.write('</td>');
+                document.write('</tr>');
+            }
+            document.write('</table>');
+        </script>
+    </body>
+</html>

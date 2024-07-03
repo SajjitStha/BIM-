@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Attribute</title>
+    <link rel="stylesheet" href="32b.css
+    " />
+  </head>
+  <body>
+    <div id="div1">
+      <h1 id="head">Hello!</h1>
+
+      <p id="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet labore explicabo, possimus similique
+        dolorum nihil odit quod eligendi sed voluptas quam, quaerat cum provident esse aperiam autem molestiae quia.
+      </p>
+    </div>
+
+    <button onclick="changeAttribute()">Change Attribute</button>
+
+    <script>
+      function changeAttribute() {
+        const h1 = document.getElementById("head");
+        const para = document.getElementById("para");
+
+        h1.classList.add("colorChange");
+
+        para.classList.add("sizeChange");
+      }
+    </script>
+  </body>
+</html>

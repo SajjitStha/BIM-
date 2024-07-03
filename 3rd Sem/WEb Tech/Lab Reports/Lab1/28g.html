@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Check</title>
+  </head>
+  <body>
+    <script>
+      let l = prompt("Enter length");
+      let b = prompt("Enter Breadth");
+
+      function checkSquare(length, breadth) {
+        length = parseFloat(length);
+        breadth = parseFloat(breadth);
+
+        if (length === breadth) return "The object is Square";
+        else return "The object is Rectangle";
+      }
+
+      document.write(checkSquare(l, b));
+    </script>
+  </body>
+</html>

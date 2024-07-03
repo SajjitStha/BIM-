@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuboid</title>
+  </head>
+  <body>
+    <script>
+      const length = parseFloat(prompt("Enter the length of the cuboid:"));
+      const breadth = parseFloat(prompt("Enter the breadth of the cuboid:"));
+      const height = parseFloat(prompt("Enter the height of the cuboid:"));
+
+      document.write("Length = " + length + " breadth = " + breadth + " height = " + height);
+
+      const volume = length * breadth * height;
+      const sarea = 2 * (length * breadth + length * height + breadth * height);
+
+      document.write("<br>Volume = " + volume + "<br>Surface Area = " + sarea);
+    </script>
+  </body>
+</html>
