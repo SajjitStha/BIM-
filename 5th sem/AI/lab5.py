@@ -34,14 +34,18 @@ def solve_n_queens(N):
     solve_n_queens_util(board, 0, N, result)
     return result
 
-def print_solutions(solutions):
+def print_solutions(solutions, limit=None):
+    count = 0
     for i, solution in enumerate(solutions):
+        if limit and count >= limit:
+            break
         print(f"Solution {i+1}:")
         for row in solution:
             print(row)
         print()
+        count += 1
 
 if __name__ == "__main__":
-    N = 4  # Change N to the desired board size
+    N = 8  # Set N to 8 for the 8-queens problem
     solutions = solve_n_queens(N)
-    print_solutions(solutions)
+    print_solutions(solutions, limit=2)  # Print only the first two solutions
