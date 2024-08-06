@@ -1,51 +1,34 @@
-def is_safe(board, row, col, N):
-    # Check if there is a queen in the same column up to the current row
-    for i in range(row):
-        if board[i][col] == 1:
+def is_safe(board, row, col, n):
+    # Check this row on left side
+    for i in range(col):
+        if board[row][i] == 1:
             return False
-    
     # Check upper diagonal on left side
     for i, j in zip(range(row, -1, -1), range(col, -1, -1)):
         if board[i][j] == 1:
             return False
-    
-    # Check upper diagonal on right side
-    for i, j in zip(range(row, -1, -1), range(col, N)):
+    # Check lower diagonal on left side
+    for i, j in zip(range(row, n, 1), range(col, -1, -1)):
         if board[i][j] == 1:
             return False
-    
     return True
-
-def solve_n_queens_util(board, row, N, result):
-    # If all queens are placed then add the solution to result
-    if row == N:
-        result.append(["".join("Q" if cell == 1 else "." for cell in row) for row in board])
-        return
-    
-    for col in range(N):
-        if is_safe(board, row, col, N):
-            board[row][col] = 1
-            solve_n_queens_util(board, row + 1, N, result)
-            board[row][col] = 0  # Backtrack
-
-def solve_n_queens(N):
-    board = [[0] * N for _ in range(N)]
-    result = []
-    solve_n_queens_util(board, 0, N, result)
-    return result
-
-def print_solutions(solutions, limit=None):
-    count = 0
-    for i, solution in enumerate(solutions):
-        if limit and count >= limit:
-            break
-        print(f"Solution {i+1}:")
-        for row in solution:
-            print(row)
-        print()
-        count += 1
-
-if __name__ == "__main__":
-    N = 8  # Set N to 8 for the 8-queens problem
-    solutions = solve_n_queens(N)
-    print_solutions(solutions, limit=2)  # Print only the first two solutions
+def solve_n_queens_util(board, col, n):
+    if col >= n:
+        return True
+    for i in range(n):
+        if is_safe(board, i, col, n):
+            board[i][col] = 1
+            if solve_n_queens_util(board, col + 1, n):
+                return True
+            board[i][col] = 0  # Backtrack
+    return False
+def solve_n_queens(n):
+    board = [[0 for _ in range(n)] for _ in range(n)]
+    if not solve_n_queens_util(board, 0, n):
+        print("Solution does not exist")
+        return False
+    for row in board:
+        print(row)
+    return True
+# Example usage for 8 queens
+solve_n_queens(8)
