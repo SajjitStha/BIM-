@@ -29,6 +29,7 @@ try:
     plt.pie(values, labels=categories, autopct='%1.1f%%', colors=custom_colors[:len(categories)],shadow='True')
     plt.title('Pie Chart of CSV Data')
 
+
     # Display the plot
     plt.show()
 
