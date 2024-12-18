@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar d-flex justify-content-between align-items-center px-4 py-2 bg-dark text-white">
+            <div class="d-flex align-items-center">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                <span>We deliver within Nairobi and across Kenya</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <select class="form-select form-select-sm me-3" style="width: auto;">
+                    <option>Eng</option>
+                </select>
+                <select class="form-select form-select-sm me-3" style="width: auto;">
+                    <option>USD</option>
+                </select>
+                <a href="#" class="text-white text-decoration-none">Sign In / Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Logo and Navbar -->
+        <div class="navbar-container bg-white">
+            <nav class="navbar navbar-expand-lg container py-3">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="logo.png" alt="myDAWA Logo" style="height: 50px;">
+                </a>
+                <!-- Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Search Bar -->
+                    <div class="search-bar mx-auto d-flex">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button class="btn btn-success px-4 ">Search</button>
+                    </div>
+                    <!-- Icons -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex align-items-center">
+                                <i class="fas fa-shopping-bag me-2 text-success"></i>
+                                <span>KES 2,000</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Secondary Navigation -->
+        <div class="secondary-navbar bg-light py-0">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Dropdown Categories and Navigation Links -->
+                <div class="d-flex align-items-center">
+                    <!-- Dropdown Categories -->
+                    <div class="dropdown me-2">
+                        <button class="btn dropdown-toggle categories-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            &#9776; All Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                            <li><a class="dropdown-item" href="#">Category 3</a></li>
+                        </ul>
+                    </div>
+                    <!-- Navigation Links -->
+                    <nav class="navihome d-flex gap-4">
+                        <a href="#" class="text-decoration-none text-dark">Home</a>
+                        <a href="#" class="text-decoration-none text-dark">Shop</a>
+                        <a href="#" class="text-decoration-none text-dark">My Health Centre</a>
+                        <a href="#" class="text-decoration-none text-dark">Contact Us</a>
+                    </nav>
+                </div>
+                <!-- Action Buttons -->
+                <div class="sub-button d-flex gap-4">
+                    <button class="btn btn-dark text-white rounded-pill">Submit a Prescription</button>
+                    <button class="btn btn-dark text-white rounded-pill">Book a Consultation</button>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info d-flex px-20">
+                    <i class="fa-solid fa-phone me-2 text-success"></i>
+                    <span class="fw-bold">+254 20521 9999</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Add main content here -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 text-center">
+        &copy; 2024 Your Website. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Bar */
+.top-bar {
+    font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar-container {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    max-width: 600px;
+   
+}
+.search-bar .btn{
+    border: 2px solid ;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius:8px;
+}
+.navihome{
+    padding: 5px;
+
+
+}
+.navihome a{
+    padding-left: 20px;
+    gap: 3px;
+}
+.contact-info{
+   
+    float: right;
+}
+
+
+.search-bar input {
+    border-right: none;
+    border-radius: 0;
+}
+
+.search-bar button {
+    border-radius: 0;
+}
+.secondary-navbar{
+    margin-top: 0px;
+}
+/* Remove gap and set button margin to zero */
+.sub-button button {
+    margin: 0;
+    border-radius: 0; /* Optional: if you want buttons touching seamlessly */
+}
+
+/* Adjust contact-info alignment */
+.secondary-navbar .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* Secondary Navbar */
+.secondary-navbar .categories-btn {
+    background-color: #e91e63; /* Reddish pink */
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 20px 15px;
+    border-radius:5px solid #e91e63;
+}
+
+.secondary-navbar .categories-btn:hover {
+    background-color: #d81b60;
+}
+
+.secondary-navbar .dropdown-menu {
+    background-color: #e91e63; /* Reddish pink background */
+    color: white;
+}
+
+.secondary-navbar .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.secondary-navbar .dropdown-menu a:hover {
+    background-color: #d81b60;
+}
+
+.secondary-navbar nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.secondary-navbar nav a:hover {
+    color: #e91e63; /* Match categories color */
+}
+
+.secondary-navbar .contact-info {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    float: left;
+    color: black;
+}
+
+.secondary-navbar .contact-info i {
+    font-size: 1.2rem;
+}
+
+button.btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+button.btn:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .search-bar {
+        flex: 1;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .secondary-navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .categories-btn {
+        font-size: 0.9rem;
+    }
+
+    .navbar-container,
+    .secondary-navbar {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 472px) {
+    .search-bar input {
+        font-size: 0.8rem;
+    }
+
+    button.btn {
+        padding: 6px 15px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .contact-info {
+        flex-basis: 100%;
+        justify-content: flex-end;
+    }
+}
